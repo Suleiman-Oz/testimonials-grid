@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: hsl(0, 0%, 83%);
+  }
+  #hero {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-areas:
+      "dani dani jona kira"
+      "jean patr patr kira";
+    gap: 30px;
+    font-size: 13.3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .box {
+    border-radius: 10px;
+    box-shadow: 2px 10px 2 rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+  }
+  .dani {
+    grid-area: dani;
+    width: 600px;
+    height: 280px;
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+  }
+  .jona {
+    grid-area: jona;
+    width: 300px;
+    height: 280px;
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+  }
+  .kira {
+    grid-area: kira;
+    width: 300px;
+    height: 570px;
+    background-color: hsl(0, 0%, 98%);
+  }
+  .jean {
+    grid-area: jean;
+    width: 300px;
+    height: 260px;
+    background-color: hsl(0, 0%, 98%);
+  }
+  .patr {
+    grid-area: patr;
+    width: 600px;
+    height: 260px;
+    background-color: hsl(219, 29%, 14%);
+    color: #fff;
+  }
+  .person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .person img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 25px;
+  }
+  .in-per p {
+    margin-left: -25px;
+  }
+  #hero .box p {
+    padding: 0 25px;
+  }
+  .box  h2 {
+    padding: 20px 25px;
+  }
+
+  @media (max-width: 375px){
+    #hero{
+      display: grid;
+      grid-template-areas:
+      'dani' 
+      'jona'
+      'jean'
+      'patr' 
+      'kira' ;
+      width: 90%;
+      margin: 50px auto;
+    }
+    .dani {
+    grid-area: dani;
+    width: 300px;
+    height: 520px;
+  }
+    .jona {
+    grid-area: jona;
+    width: 300px;
+    height: 280px;
+  }
+  .kira {
+    grid-area: kira;
+    width: 300px;
+    height: 560px;
+  }
+  .jean {
+    grid-area: jean;
+    width: 300px;
+    height: 240px;
+  }
+  .patr {
+    grid-area: patr;
+    width: 300px;
+    height: 500px;
+  }
+  }
